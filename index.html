@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What From API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./">WhatFrom?</a></li>
+                <li><a href="https://rapidapi.com/gibstock/api/what-from/details">Usage</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hero">
+            <img src="/img/what-from-sm.png" alt="what from logo">
+            <h1>WhatFrom?</h1>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <article class="article_header">
+                <h2>What is this?</h2>
+                <p>A simple concept born from a simple idea. We're movie trivia junkies at my house and we are constantly on IMDB asking ourselves "What's he from?"</p>
+                <p>I decided to make an easy API from which I can simply search the name of an actor and return what they've been in without all the Amazon bloat on the IMDB website.</p>
+            </article>
+        </section>
+        <section id="instructions">
+            <article>
+                <h2>How does it work?</h2>
+                <p>It's as simple and stripped down as it can get. Simply head to <a href="https://rapidapi.com/gibstock/api/what-from/details">RapidAPI</a> to access the endpoint. You will be able to search an actor's name and you will get a JSON object returned with information on the actor.</p>
+                <p>Use it for your own curiosity or build an app with it and utilize some of the other information returned.</p>
+            </article>
+        </section>
+        <section id="example">
+            <article>
+                <h2>Example</h2>
+                <p>Here's what you can expect as a response: </p>
+                <div class="codebox">
+                    <pre>
+[
+    [
+        {
+            "name": "Elijah Wood",
+            "profilePic": "https://m.media-amazon.com/images/M/MV5BMTM0NDIxMzQ5OF5BMl5BanBnXkFtZTcwNzAyNTA4Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg",
+            "mainPage": "https://www.imdb.com/name/nm0000704/"
+        }
+    ],
+    [
+        {
+            "title": "Psychonauts 2",
+            "year": "2021",
+            "link": "https://www.imdb.com/title/tt5337160/?ref_=nm_flmg_act_3",
+            "role": "Nick Johnsmith (voice)"
+        },
+        {
+            "title": "No Man of God",
+            "year": "2021",
+            "link": "https://www.imdb.com/title/tt13507778/?ref_=nm_flmg_act_4",
+            "role": "Bill Hagmaier"
+        },
+        {
+            "title": "Summer Camp Island",
+            "year": "2018-2020",
+            "link": "https://www.imdb.com/title/tt8146760/?ref_=nm_flmg_act_5",
+            "series": "TV Series",
+            "tvRole": "Saxophone (voice)"
+        }
+    ]
+]
+                    </pre>
+                </div>
+            </article>
+        </section>
+        <section id="contact">
+            <article>
+                <h2>Questions?</h2>
+                <p>If you have any questions feel free to reach out!</p>
+                <a href="mailto:andre@knucklecuts.com">andre@knucklecuts.com</a>
+            </article>
+        </section>
+            
+    </main>
+    <footer>
+        <ul>
+            <li>&copy; 2021 WhatFrom?</li>
+            <li>Created By Andre</li>
+        </ul>
+    </footer>
+</body>
+</html>
